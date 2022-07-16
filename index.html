@@ -1,19 +1,261 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-<meta http-equiv="refresh" content="4; URL='sign in screen/index2.html'" />
-  <meta charset="UTF-8">
-  <title>Loading...</title>
-  <link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<html lang="en">
+  <head>
+<link rel="icon" href="1.png">
 
-</head>
-<body><center>
-<h1><font color=red face=algerian>RM <font color=blue face=algerian>HISTORY - <font color=green face=algerian>EDUCATION</font></h1>
-<!-- partial:index.partial.html -->
-<!-- Loading square for squar.red network -->
-<span class="loader"><span class="loader-inner"></span></span>
-<!-- partial -->
- </center> 
-</body>
+
+
+
+
+
+
+
+<style>
+body
+   {
+     margin:0px; background-color:white; color:#368eef; font-family:Arial, Helvetica, sans-serif;
+   }
+   #main
+   {
+     width:600px; height:260px; margin-left:auto; margin-right:auto; border-radius:5px; padding-left:10px; margin-top:100px;
+     border-top:3px double #368eef; border-bottom:3px double #f1f1f1; padding-top:20px;
+   }
+   #main table
+   {
+     font-family:;
+   } 
+  /* css code for textbox */
+  #main .tb
+  {
+    height:28px; width:230px; border:1px solid #368eef; color:#368eef; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;
+  }
+
+   /* css code for button*/
+   #main .btn
+   {
+    width:80px; height:32px; outline:none;  font-weight:bold; border:0px solid #368eef; text-shadow: 0px 0.5px 0.5px #fff;	
+    border-radius: 2px; font-weight: 600; color: white; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+   }
+  
+   #main .btn:hover
+   {
+    background-color:#368eef; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+   }
+
+</style>
+
+
+
+<script>
+function login()
+	{
+		var uname = document.getElementById("email").value;
+		var pwd = document.getElementById("pwd1").value;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(uname =='')
+		{
+			alert("please enter user name.");
+		}
+		else if(pwd=='')
+		{
+        	alert("enter the password");
+		}
+		else if(!filter.test(uname))
+		{
+			alert("Enter valid email id.");
+		}
+		else if(pwd.length < 6 || pwd.length > 14)
+		{
+			alert("Password min and max length is 6.");
+		}
+		else if(pwd=='RM00001')
+		{
+        	alert("HI RAMEESHA GAMAGE TEACHER");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00002')
+		{
+        	alert("HI PRAVEEN CANDIMA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00003')
+		{
+        	alert("HI SANKETH DINUJAYA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00004')
+		{
+        	alert("HI THEJITH");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00005')
+		{
+        	alert("HI GAWESH");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00006')
+		{
+        	alert("HI GITHMI VINODAYA RATHNAAYAKA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00007')
+		{
+        	alert("HI NETHMI IMALKA KAAVINDI");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RMNEWST')
+		{
+        	alert("HI STUDENT");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00008')
+		{
+        	alert("HI SAUMYA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='ADMINRM1')
+		{
+        	alert("HI PATHUM LAKSHAN");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/admin.html";
+		}
+		else if(pwd=='RM00009')
+		{
+        	alert("HI PATHUM LAKSHAN");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00010')
+		{
+        	alert("HI ABDULLAH");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='ADMINRM2')
+		{
+        	alert("HI ABDULLAH");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/admin.html";
+		}
+		else if(pwd=='RM00011')
+		{
+        	alert("HI PABODA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00012')
+		{
+        	alert("HI SAFA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00013')
+		{
+        	alert("HI MADUSHI");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		else if(pwd=='RM00014')
+		{
+        	alert("HI SEHARA");
+        	//Redirecting to other page or webste code or you can set your own html page.
+       window.location = "home/index.html";
+		}
+		
+	}		
+	
+
+</script>
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+   Hi , welcome to our website , sign in to get started <br>
+ <title>RM HISTORY-EDU Sign In Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+         
+          <!-- Main div code -->
+	<div id="main">
+	<div class="h-tag">
+	<h2>Welcome To RM HISTORY-EDUCATION Account Login</h2>
+	</div>
+	<!-- Login box -->
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td>Enter Your Email:</td>
+	<td><input type="text" placeholder="Enter your email" id="email" class="tb" style="border-radius:10px;" /></td>
+	</tr>
+	<tr>
+	<td>Enter Your ID :</td>
+	<td><input type="password" placeholder="RM0000" id="pwd1" class="tb" style="border-radius:10px;" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="Reset" class="btn" />
+	<input type="submit" value="Login" class="btn" onClick="login()" /></td>
+	</tr>
+	</table>
+	</div>
+  	 <!-- login box div ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Sign in to start!</h3>
+            <p>
+              
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Click Here!
+            </button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Sign in to start!</h3>
+            <p>
+              
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Click Here!
+            </button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
